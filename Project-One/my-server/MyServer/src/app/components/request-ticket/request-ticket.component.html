@@ -1,0 +1,18 @@
+
+<ul>
+    <li *ngFor = "let item of reimbArray">
+            <ul>
+                <li>Reimbursement ID {{item.ID}}</li>
+                    <li> Reimbursment Amount {{ item.reimbAmount}} </li>
+                    <li> Reimbursement Author {{ item.reimbAuthor}} </li>
+                    <li> Reimbursement Resolver {{ item.reimbResolver}} </li>
+                    <li> Reimbursement Status Id {{ item.reimbStatusId}} </li>
+                    <li> Reimbursement Type Id {{ item.reimbTypeId}} </li>
+                    <li> Reimbursement Description {{ item.reimbDescription}} </li>
+            </ul>
+         </li>
+    
+            
+</ul>
+
+<!-- <button (click) = "()">Go to Homepage</button> -->

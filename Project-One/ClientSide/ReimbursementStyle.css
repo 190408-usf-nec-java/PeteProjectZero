@@ -1,0 +1,46 @@
+body{
+    background-image: url(./image/black-shade-background-4.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.module{
+    display:none;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid white;
+    width: 600px
+}
+
+.module.active-module{
+    display: block;
+}
+
+h1,h3 {
+    color: white;
+    text-align: center;
+}
+
+input {
+    margin: 5px;
+}
+
+.row-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"], input[type="password"] {
+    flex-grow: 1;
+}
+
+#signup-nav, #login-nav {
+    padding: 3px;
+    border: 1px solid grey;
+    text-align: center;
+    background: #EEE;
+    margin: 5px;
+    cursor: pointer;
+}
+

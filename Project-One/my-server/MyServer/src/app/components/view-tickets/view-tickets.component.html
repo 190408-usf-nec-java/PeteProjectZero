@@ -1,0 +1,36 @@
+<div>
+<table class= "table">
+        <thead class="thead bg-primary">
+        <th>#</th>
+        <th>Amount</th>
+        <th>Author ID</th>
+        <th>Manager ID</th>
+        <th> Status ID</th>
+        <th> Type ID</th>
+        <th> Description</th>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of reimbArray">
+        <td>{{ item.id}}</td>
+        <td>{{ item.amount}}</td>
+        <td>{{ item.author}}</td>
+        <td>{{ item.resolver}}</td>
+        <td>{{ item.status_Id}}</td>
+        <td>{{ item.type_Id}}</td>
+        <td>{{ item.description}}</td>
+        </tr>
+        </tbody>
+</table>
+</div>
+
+<button class = "btn btn-primary" (click) = "BacktoHome()">Go to Homepage</button>
+
+<!-- <ul>
+    <li *ngFor = "let item of reimbArray"> Reimbursement Id {{ item.id}} </li>
+            <li *ngFor = "let item of reimbArray">  Reimbursment Amount {{ item.amount}} </li>
+            <li *ngFor = "let item of reimbArray"> Reimbursement Author {{ item.author}} </li>
+            <li *ngFor = "let item of reimbArray"> Reimbursement Resolver {{ item.resolver}} </li>
+            <li *ngFor = "let item of reimbArray"> Reimbursement Status Id {{ item.status_Id}} </li>
+            <li *ngFor = "let item of reimbArray"> Reimbursement Type Id {{ item.type_Id}} </li>
+            <li *ngFor = "let item of reimbArray"> Reimbursement Description {{ item.description}} </li>
+   </ul> -->

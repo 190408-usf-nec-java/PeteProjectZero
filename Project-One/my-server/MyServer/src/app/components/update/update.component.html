@@ -1,0 +1,21 @@
+<div>
+    <table class="table">
+            <thead class="thead">
+            <th># Previous Tickets</th>
+            <th></th>
+            </thead>
+            <tbody>
+            <tr *ngFor="let item of reimbArray">
+            <td>{{ item.id}}</td>
+            <td>{{ item.amount}}</td>
+            <td>{{ item.author}}</td>
+            <td>{{ item.resolver}}</td>
+            <td>{{ item.status_Id}}</td>
+            <td>{{ item.type_Id}}</td>
+            <td>{{ item.description}}</td>
+            </tr>
+            </tbody>
+    </table>
+    </div>
+
+    <button class = "btn btn-primary" (click) = "BacktoHome()">Go to Homepage</button>

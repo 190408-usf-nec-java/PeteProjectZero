@@ -1,0 +1,9 @@
+
+  <nav class = "navbar navbar-expand-sm bg-dark">
+    
+    <button class="btn btn-primary" (click) = "ViewTicket()">Go to past View</button>
+    <button class="btn btn-primary" (click)="SubmitTicket()">Go to submit Ticket</button>
+    <button class="btn btn-primary" (click)="ViewAll()" *ngIf="managerValid()">Accept/Decline Employee tickets</button> 
+    <button class="btn btn-primary" (click) ="clearStorage()" routerLink="">Logout</button>
+  </nav>
+
